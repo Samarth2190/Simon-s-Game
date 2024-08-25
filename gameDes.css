@@ -1,0 +1,106 @@
+.m{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+
+    
+}
+
+.row1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+
+/* .row1  .element{
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 25px;   
+} */
+
+.row2{
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* .row2  .element{
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 25px;   
+} */
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.element{
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 25px;   
+} 
+
+.element{
+    margin-right: 30px;
+    /* box-shadow: 0px 0px 20px 2px black; */
+    box-shadow: 0px 0px 20px 2px rgb(0 0 0 / 60%);
+
+    transition: ease-in box-shadow 0.3s;
+    backdrop-filter: blur(10px);
+
+}
+body{
+    background-color: aqua;
+}
+
+h1{
+    /* border: 5px solid black; */
+    border-radius: 50px;
+    border: 2px solid black;
+    line-height: 50px;
+    padding: 0 15px 0 15px;
+    box-shadow: 0px 0px 20px 0px black;
+    transition: ease-in box-shadow 1s;
+}
+h1:hover{
+
+    box-shadow: 0px 3px 20px 10px black;
+   
+}
+.element:hover{
+    /* box-shadow: 0px 0px 20px 7.5px black; */
+    /* box-shadow: inset 0px 0px 20px 7.5px rgba(0, 0, 0, 0.8); */
+    box-shadow: 0px 0px 20px 7.5px rgba(0, 0, 0, 0.8);
+
+}
+.one{
+    background-color: brown;
+}
+.two{
+    background-color: rgb(252, 255, 53);
+}
+
+.three{
+    background-color: rgb(56, 17, 200);
+}
+.four{
+    background-color: rgb(230, 41, 205);
+}
+
+.flash{
+    background-color: white;
+}
+
+.danger{
+    background-color: red;
+}
+
+.gflash{
+    background-color: green;
+}
