@@ -5,7 +5,7 @@ let started = false;
 // let userC;
 let level = 0;
 document.addEventListener("keypress", function (event) {
-    if (event.code == "Enter") {
+    // if (event.code == "Enter") {
         if (started == false) {
             started = true;
             level = 0;
@@ -14,7 +14,7 @@ document.addEventListener("keypress", function (event) {
             levelup();
             document.querySelector("h3").innerText="";
         }
-    }
+    // }
 })
 
 function levelup() {
@@ -40,12 +40,15 @@ function btnflash(btn) {
 let allBtns = document.querySelectorAll(".btn");
 for (btn of allBtns) {
     btn.addEventListener("click", btnPress);
+    // btn.innerText="H";
 }
 function btnPress() {
+    if(started){
     userC = this.getAttribute("id");
     userSer.push(userC);
     checker();
-    // console.log("user choice",userC);
+    console.log("user choice",userC);
+}
 }
 
 function checker() {
@@ -68,7 +71,7 @@ function checker() {
         document.querySelector("h2").innerText = `Game over | Your Score: ${level - 1}`;
         let r = document.querySelector("h3");
         r.innerText = "Press 'Enter' key to restart";
-        document.querySelector("h2").insertAdjacentElement('afterend', r);
+        // document.querySelector("h2").insertAdjacentElement('afterend', r);
         started = false;
     }
 }
