@@ -42,14 +42,14 @@
 .element{
     height: 200px;
     width: 200px;
-    border: 10px solid black;
+    /* border: 5px solid rgba(185, 36, 36, 0.432); */
     border-radius: 25px;   
 } 
 
 .element{
     margin-right: 30px;
     /* box-shadow: 0px 0px 20px 2px black; */
-    box-shadow: 0px 0px 20px 2px rgb(0 0 0 / 60%);
+    box-shadow: 0px 0px 20px 2px rgba(136, 129, 129, 0.6);
 
     transition: ease-in box-shadow 0.3s;
     backdrop-filter: blur(10px);
@@ -62,15 +62,15 @@ body{
 h1{
     /* border: 5px solid black; */
     border-radius: 50px;
-    border: 2px solid black;
+    border: 2px solid #b0aaaa;
     line-height: 50px;
     padding: 0 15px 0 15px;
-    box-shadow: 0px 0px 20px 0px black;
+    box-shadow: 0px 0px 20px 0px #b0aaaa;
     transition: ease-in box-shadow 1s;
 }
 h1:hover{
 
-    box-shadow: 0px 3px 20px 10px black;
+    box-shadow: 0px 3px 20px 10px #b0aaaa;
    
 }
 .element:hover{
@@ -80,17 +80,17 @@ h1:hover{
 
 }
 .one{
-    background-color: brown;
+    background-color: red;
 }
 .two{
-    background-color: rgb(252, 255, 53);
+    background-color: yellow;
 }
 
 .three{
-    background-color: rgb(56, 17, 200);
+    background-color: rgb(54 0 255);
 }
 .four{
-    background-color: rgb(230, 41, 205);
+    background-color: rgb(255 0 221);
 }
 
 .flash{
